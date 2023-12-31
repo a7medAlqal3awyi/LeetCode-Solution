@@ -9,11 +9,10 @@ public:
             return true;
         }
 
-        // Otherwise, add it to the set
         uniqueElements.insert(num);
     }
 
-    // If no duplicates were found, return false
+    // If no duplicates return false
     return false;
     }
 };
