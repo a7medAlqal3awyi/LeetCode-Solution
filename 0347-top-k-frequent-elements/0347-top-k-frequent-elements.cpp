@@ -13,7 +13,7 @@ public:
         result.push_back(entry.first);
     }
 
-    partial_sort(result.begin(), result.begin() + k, result.end(),
+    partial_sort( result.begin(), result.begin() + k, result.end(),
                  [&](int a, int b) {
                      return frequency_map[a] > frequency_map[b]; 
                  });
